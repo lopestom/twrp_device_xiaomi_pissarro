@@ -85,7 +85,7 @@ jobs:
        PATH=~/bin:$PATH
        cd twrp
        export ALLOW_MISSING_DEPENDENCIES=true && source build/envsetup.sh &&lunch twrp_pissarro-eng && mka $TARGET -j$(nproc --all)
-       cp  out/target/product/pissarro/boot.img    out/target/product/pissarro/boot-pissarro-A12.img
+       cp  out/target/product/pissarro/boot.img    out/target/product/pissarro/boot_TWRP-pissarro-A13.img
              
     - name: Release recovery image
       uses: softprops/action-gh-release@v1
@@ -93,6 +93,6 @@ jobs:
        GITHUB_TOKEN: ${{ secrets.TEST }}
       with:
        tag_name: Xiaomi_Redmi_Note_11_Pro_Plus_5G-pissarro
-       name: TWRP37x_12
+       name: TWRP37x_13
        files: | 
          twrp/out/target/product/pissarro/boot*.img
