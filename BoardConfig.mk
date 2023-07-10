@@ -152,6 +152,8 @@ TW_HAS_NO_RECOVERY_PARTITION := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXCLUDE_APEX := true
 TW_EXCLUDE_TWRPAPP := true
+TW_EXCLUDE_ENCRYPTED_BACKUPS := false
+TW_BACKUP_EXCLUSIONS := /data/fonts/files
 
 # Resolution
 TW_THEME := portrait_hdpi
