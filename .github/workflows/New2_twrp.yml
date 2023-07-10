@@ -85,7 +85,7 @@ jobs:
        PATH=~/bin:$PATH
        cd twrp
        export ALLOW_MISSING_DEPENDENCIES=true && source build/envsetup.sh &&lunch twrp_pissarro-eng && mka $TARGET -j$(nproc --all)
-       cp  out/target/product/pissarro/boot.img    out/target/product/pissarro/boot_TWRP-pissarro-A13.img
+       cp  out/target/product/pissarro/boot.img    out/target/product/pissarro/boot_TWRP-pissarro-A13-2.img
              
     - name: Release recovery image
       uses: softprops/action-gh-release@v1
